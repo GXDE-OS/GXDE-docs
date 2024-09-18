@@ -1,10 +1,5 @@
 ![Logo](/new-logo-long.png)
 
-<a href='https://gitee.com/GXDE-OS/GXDE/stargazers'><img src='https://gitee.com/GXDE-OS/GXDE/badge/star.svg?theme=dark' alt='star'></a>
-<a href='https://gitee.com/GXDE-OS/GXDE/members'><img src='https://gitee.com/GXDE-OS/GXDE/badge/fork.svg?theme=dark' alt='fork'></a>
-
----
-
 # 系统安装
 
 ::: info
@@ -15,11 +10,11 @@
 huang111：https://pan.huang1111.cn/s/laonjFL  
 Sourceforge：https://sourceforge.net/projects/gxde-os/files
 
-mips64 架构的安装方法可以参考：https://gitee.com/GXDE-OS/document/blob/master/Install.md
+mips64 架构的安装方法可以参考：[APT 源安装](apt.md)
 
-GXDE 仍不完美，请在安装前确认 https://gitee.com/GXDE-OS/gxde-faq/blob/master/README.md 中的事项
+GXDE 仍不完美，请在安装前确认 [FAQ](faq.md) 中的事项
 
-Legacy 启动的用户请在安装时选中 高级选项 中的Debian安装器进行安装
+Legacy 启动的用户请在安装时选中 高级选项 中的 Debian 安装器进行安装
 
 ## 介绍
 
@@ -27,7 +22,6 @@ The classical version--deepin 15 is still preferred by a handful of deepin users
 In order to solve this problem, GXDE has been under development. It is on the basis of a newer Debian version with the familiar DDE 15.
 
 对于许多用户来讲，deepin 15 依旧是非常经典的版本，但是因为底层已经非常老旧（Debian 9）以至于不能运行新的程序，所以为了解决这个问题，基于更新底层的 GXDE 就出现了以便让 DDE 15 能重回人们的视野
-
 
 （GXDE 全称为 Gorgeous eXtended Deepin Environment）
 

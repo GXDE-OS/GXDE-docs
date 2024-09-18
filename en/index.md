@@ -61,10 +61,10 @@ Sponsorship is our source of continuation! Thank you for your support!
 
 <script setup>
 import { ElCarousel, ElCarouselItem, ElImage, ElImageViewer } from 'element-plus';
-import 'element-plus/es/components/carousel/style/css';
-import 'element-plus/es/components/carousel-item/style/css';
-import 'element-plus/es/components/image/style/css';
-import 'element-plus/es/components/image-viewer/style/css';
+// import 'element-plus/es/components/carousel/style/css';
+// import 'element-plus/es/components/carousel-item/style/css';
+// import 'element-plus/es/components/image/style/css';
+// import 'element-plus/es/components/image-viewer/style/css';
 
 const previewSrcList = [
   '/1.png',

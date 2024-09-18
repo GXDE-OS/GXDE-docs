@@ -1,5 +1,7 @@
 import { defineConfig } from "vitepress";
-import * as ElementPlus from "unplugin-element-plus/vite";
+import AutoImport from "unplugin-auto-import/vite";
+import Components from "unplugin-vue-components/vite";
+import { ElementPlusResolver } from "unplugin-vue-components/resolvers";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -11,13 +13,17 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "首页", link: "/" },
-      { text: "使用指南", link: "/install/" },
+      { text: "使用指南", link: "/install/", activeMatch: "^/install/" },
     ],
 
     sidebar: [
       {
         text: "使用指南",
-        items: [{ text: "安装", link: "/install/" }],
+        items: [
+          { text: "系统安装", link: "/install/" },
+          { text: "APT 源安装", link: "/install/apt" },
+          { text: "FAQ", link: "/install/faq" },
+        ],
       },
     ],
 
@@ -63,7 +69,11 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: "Home", link: "/en/" },
-          { text: "Getting Started", link: "/en/install/" },
+          {
+            text: "Getting Started",
+            link: "/en/install/",
+            activeMatch: "^/en/install/",
+          },
         ],
         sidebar: [
           {
@@ -79,4 +89,15 @@ export default defineConfig({
 
   lastUpdated: true,
   cleanUrls: true,
+
+  vite: {
+    plugins: [
+      AutoImport({
+        resolvers: [ElementPlusResolver()],
+      }),
+      Components({
+        resolvers: [ElementPlusResolver()],
+      }),
+    ],
+  },
 });
