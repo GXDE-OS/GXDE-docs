@@ -28,6 +28,14 @@ features:
     details: Supporting diverse CPU architectures (amd64, arm64, loong64) to enable wider use of this classic desktop
 ---
 
+## Image Display
+
+<el-carousel type="card" height="24vw" indicator-position="none">
+  <el-carousel-item v-for="item, k in previewSrcList" :key="item">
+    <el-image preview-teleported :preview-src-list="previewSrcList" :src="item" :initial-index="k" />
+  </el-carousel-item>
+</el-carousel>
+
 ## Have any questions? Contact us!
 
 Contact information can be found in the website navigation bar.
@@ -49,14 +57,6 @@ Sponsorship is our source of continuation! Thank you for your support!
 
 [Sponsor us](https://gitee.com/GXDE-OS#%E8%AF%B7%E4%BD%9C%E8%80%85%E5%96%9D%E6%9D%AF%E8%8C%B6)
 :::
-
-## Image Display
-
-<el-carousel type="card" height="24vw" indicator-position="none">
-  <el-carousel-item v-for="item, k in previewSrcList" :key="item">
-    <el-image preview-teleported :preview-src-list="previewSrcList" :src="item" :initial-index="k" />
-  </el-carousel-item>
-</el-carousel>
 
 
 <script setup>
