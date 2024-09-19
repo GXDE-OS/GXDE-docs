@@ -28,6 +28,14 @@ features:
     details: 兼容 amd64、arm64、loong64 等 CPU 架构，为更多机器带回经典
 ---
 
+## 图片展示
+
+<el-carousel type="card" height="24vw" indicator-position="none">
+  <el-carousel-item v-for="item, k in previewSrcList" :key="item">
+    <el-image preview-teleported :preview-src-list="previewSrcList" :src="item" :initial-index="k" />
+  </el-carousel-item>
+</el-carousel>
+
 ## 遇到问题？联系我们！
 
 联系方式见网站导航栏（
@@ -49,14 +57,6 @@ features:
 
 [赞助我们](https://gitee.com/GXDE-OS#%E8%AF%B7%E4%BD%9C%E8%80%85%E5%96%9D%E6%9D%AF%E8%8C%B6)
 :::
-
-## 图片展示
-
-<el-carousel type="card" height="24vw" indicator-position="none">
-  <el-carousel-item v-for="item, k in previewSrcList" :key="item">
-    <el-image preview-teleported :preview-src-list="previewSrcList" :src="item" :initial-index="k" />
-  </el-carousel-item>
-</el-carousel>
 
 
 <script setup>
