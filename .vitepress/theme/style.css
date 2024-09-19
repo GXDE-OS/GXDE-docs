@@ -106,15 +106,42 @@
   --vp-home-hero-image-filter: blur(44px);
 }
 
+.name {
+  line-height: 56px;
+  font-size: 42px;
+}
+.text {
+  margin: 24px auto;
+  font-size: 26px;
+  line-height: 26px;
+}
+
 @media (min-width: 640px) {
   :root {
     --vp-home-hero-image-filter: blur(56px);
+  }
+  .name  {
+    line-height: 64px;
+    font-size: 56px;
+  }
+  .text {
+    font-size: 32px;
+    line-height: 42px;
   }
 }
 
 @media (min-width: 960px) {
   :root {
     --vp-home-hero-image-filter: blur(68px);
+  }
+  .name  {
+    line-height: 72px;
+    font-size: 60px;
+  }
+  .text {
+    font-size: 36px;
+    line-height: 48px;
+    margin: 24px 0;
   }
 }
 
