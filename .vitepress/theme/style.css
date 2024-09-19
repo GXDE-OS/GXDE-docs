@@ -107,13 +107,13 @@
 }
 
 .name {
-  line-height: 56px;
-  font-size: 42px;
+  line-height: 56px!important;
+  font-size: 42px!important;
 }
 .text {
-  margin: 24px auto;
-  font-size: 26px;
-  line-height: 26px;
+  margin: 24px auto!important;
+  font-size: 26px!important;
+  line-height: 26px!important;
 }
 
 @media (min-width: 640px) {
@@ -121,12 +121,12 @@
     --vp-home-hero-image-filter: blur(56px);
   }
   .name  {
-    line-height: 64px;
-    font-size: 56px;
+    line-height: 64px!important;
+    font-size: 56px!important;
   }
   .text {
-    font-size: 32px;
-    line-height: 42px;
+    font-size: 32px!important;
+    line-height: 42px!important;
   }
 }
 
@@ -135,13 +135,13 @@
     --vp-home-hero-image-filter: blur(68px);
   }
   .name  {
-    line-height: 72px;
-    font-size: 60px;
+    line-height: 72px!important;
+    font-size: 60px!important;
   }
   .text {
-    font-size: 36px;
-    line-height: 48px;
-    margin: 24px 0;
+    font-size: 36px!important;
+    line-height: 48px!important;
+    margin: 24px 0!important;
   }
 }
 
